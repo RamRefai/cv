@@ -12,6 +12,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+    <script type="module">
+        import confetti from 'https://cdn.skypack.dev/canvas-confetti';
+        const confButton = document.querySelector("#do-confetti");
+        confButton.addEventListener("click", () => {
+        confetti();
+        });
+    </script>
 </head>
 
 <body>
@@ -33,7 +40,11 @@
         <h1 style = "padding-top: 25px;">Hi, I'm Ram.</h1>
         <h3>A <span class = "pro">pro</span>grammer.</h3>
         <img id = "mountain" src="images/mountain.png" alt="mountain.img" width = 1000px>
-        <img id = "ram" src="images/sheep.png" alt="ram.img" width = 60px>
+        <div id="do-confetti" class="wp-block-button">
+            <img id = "ram" src="images/sheep.png" alt="ram.img" width = 60px>
+            <!--<h1 class = "p">Happy Birthday Miriam!! :)</h1>-->
+            <!--<a class="wp-blockbutton_link">OK, Let's see it</a>-->
+        </div>
     </div>
 
     <div class="middle">
